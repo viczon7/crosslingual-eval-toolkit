@@ -42,7 +42,7 @@ crosslingual-eval-toolkit/
 └── docs/
     ├── post_editing_ru.pdf
     └── figures/
-        └── graph_russian_old_vs_new.jpg
+        └── graph_russian.jpg
 
 ```
 
@@ -140,7 +140,7 @@ The current experiments compare English with two Russian benchmark variants: an 
 
 | Benchmark variant | Accuracy |
 |---|---:|
-| English | `0.674.xxx` |
+| English | `0.674` |
 | Russian (Old) | `0.476` |
 | Russian (New) | `0.516` |
 
