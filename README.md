@@ -36,20 +36,14 @@ crosslingual-eval-toolkit/
 │   ├── raw/
 │   │   ├── hellaswag_val_500_en.jsonl
 │   │   ├── hellaswag_val_500_ru_mt.jsonl
-│   │   └── hellaswag_val_500_fa_mt.jsonl
 │   └── processed/
 │       ├── hellaswag_val_500_ru_normalized.jsonl
 │       ├── hellaswag_val_500_ru_postedited.jsonl
-│       └── hellaswag_val_500_fa_postedited.jsonl
-├── docs/
-│   ├── post_editing_ru.pdf
-│   ├── post_editing_fa.pdf
-│   └── figures/
-│       └── graph_russian_old_vs_new.jpg
-└── outputs/
-    ├── predictions/
-    ├── metrics/
-    └── reports/
+└── docs/
+    ├── post_editing_ru.pdf
+    └── figures/
+        └── graph_russian_old_vs_new.jpg
+
 ```
 
 ## Included files
@@ -68,7 +62,7 @@ crosslingual-eval-toolkit/
 
 ### Documentation
 - `post_editing_ru.pdf` documents translation or post-editing issues in Russian.
-- `docs/figures/graph_russian_old_vs_new.jpg` shows an example comparison between two Russian benchmark variants.
+- `docs/figures/graph_russian.jpg` shows an example comparison between two Russian benchmark variants.
 
 ## Installation
 
@@ -142,7 +136,7 @@ The figure below shows an example comparison between two Russian benchmark varia
 
 This kind of comparison helps show how benchmark adaptation decisions, including cleanup and revision of translated items, can affect downstream model performance.
 
-The current experiments compare English with two Russian benchmark variants: an earlier Russian version and a revised Russian version. This makes it easier to see how translation and revision choices affect downstream model performance.
+The current experiments compare English with two Russian benchmark variants: an earlier Russian version and a revised Russian version.
 
 | Benchmark variant | Accuracy |
 |---|---:|
