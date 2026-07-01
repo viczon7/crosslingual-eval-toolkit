@@ -134,13 +134,23 @@ A typical workflow is:
 5. Run evaluation on the English, machine-translated, normalized, and post-edited files.
 6. Compare performance across benchmark variants.
 
-## Results example
+## Results
 
-The figure below shows an example comparison between two Russian benchmark variants. In this experiment, the updated Russian version achieves higher accuracy than the earlier version.
+The figure below shows an example comparison between two Russian benchmark variants.
 
-![Russian benchmark variant comparison](docs/figures/graph_russian_old_vs_new.jpg)
+![Russian benchmark variant comparison](docs/figures/graph_russian.jpg)
 
 This kind of comparison helps show how benchmark adaptation decisions, including cleanup and revision of translated items, can affect downstream model performance.
+
+The current experiments compare English with two Russian benchmark variants: an earlier Russian version and a revised Russian version. This makes it easier to see how translation and revision choices affect downstream model performance.
+
+| Benchmark variant | Accuracy |
+|---|---:|
+| English | `0.674.xxx` |
+| Russian (Old) | `0.476` |
+| Russian (New) | `0.516` |
+
+The English benchmark remains the strongest reference, while the manually post-edited Russian version improves over the raw machine-translated Russian variant and reduces the performance gap.
 
 ## Current benchmark setting
 
